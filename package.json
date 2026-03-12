@@ -1,0 +1,19 @@
+{
+  "name": "pr-report-tool",
+  "version": "1.0.0",
+  "description": "Standalone GitHub pull request HTML report generator",
+  "scripts": {
+    "report": "node ./bin/exportMergedPrHtmlReport.js",
+    "report:me": "node ./bin/exportMergedPrHtmlReport.js --author @me",
+    "report:light": "node ./bin/exportMergedPrHtmlReport.js --author @me --no-diffs",
+    "report:no-actions": "node ./bin/exportMergedPrHtmlReport.js --author @me --no-github-actions-comments",
+    "report:light:no-actions": "node ./bin/exportMergedPrHtmlReport.js --author @me --no-diffs --no-github-actions-comments"
+  },
+  "keywords": ["github", "cli", "report", "generator", "pull-requests", "html"],
+  "author": "Shubham Sharma",
+  "license": "MIT",
+  "bin": {
+    "pr-report-tool": "./bin/exportMergedPrHtmlReport.js",
+    "prt": "./bin/exportMergedPrHtmlReport.js"
+  }
+}
